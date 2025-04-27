@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akira Toriyama Art Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="gallery-body">
+  <nav class="navbar navbar-expand-lg navbar-dark gallery-navbar">
+    <div class="container">
+      <a class="navbar-brand gallery-brand" href="#">Toriyama Gallery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav gallery-nav">
+          <li class="nav-item">
+            <a class="nav-link active gallery-link" href="#" data-filter="all">All Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gallery-link" href="#" data-filter="dr-slump">Dr. Slump</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gallery-link" href="#" data-filter="dbz">Dragon Ball Z</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gallery-link" href="#" data-filter="dbs">Dragon Ball Super</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="gallery-header">
+    <div class="container text-center py-5">
+      <h1 class="gallery-title">AKIRA TORIYAMA GALLERY</h1>
+      <p class="gallery-subtitle">Artistic Evolution Through the Eras</p>
+    </div>
+  </header>
+
+  <main class="gallery-main container py-5">
+    <section class="gallery-section">
+      <h2 class="gallery-section-title">Featured Artwork</h2>
+      <div class="row gallery-grid" id="artwork-grid"></div>
+    </section>
+
+    <section class="gallery-slideshow mt-5">
+      <h2 class="gallery-section-title">Art Style Evolution</h2>
+      <div class="splide" id="featured-slideshow">
+        <div class="splide__track">
+          <ul class="splide__list" id="slideshow-container"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="gallery-footer py-4 text-center">
+    <p class="gallery-footer-text">2025 Nick's Toriyama Gallery</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
